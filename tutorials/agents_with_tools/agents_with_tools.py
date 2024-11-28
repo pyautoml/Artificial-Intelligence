@@ -118,8 +118,6 @@ class OllamaChatModel(BaseChatModel):
         system_message = system_message if system_message else self.system
 
         while True:
-            print("current memory: ", self.memory.get(), "\n\n")
-
             user_prompt = input("User: ")
             if user_prompt == "bye":
                 self.memory.add(self.message(human=user_prompt, ai="Bye"))
@@ -232,7 +230,6 @@ class OpenAIChatModel(BaseChatModel):
         system_message = system_message if system_message else self.system
 
         while True:
-            print("current memory: ", self.memory.get(), "\n\n")
             user_prompt = input("User: ")
             if user_prompt.lower() == "bye":
                 self.memory.add(self.message(human=user_prompt, ai="Bye"))
