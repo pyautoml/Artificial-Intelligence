@@ -3,7 +3,7 @@ import logging
 import aiomysql
 import traceback
 from typing import List, Tuple, Union, Self
-from abstractdatabase import AbstractDatabase
+from database_abstract import AbstractDatabase
 from custom_exceptions import ConwayException
 from custom_logger import get_logger, setup_logger
 
