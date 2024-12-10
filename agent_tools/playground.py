@@ -16,7 +16,7 @@ load_dotenv()
 
 async def main():
 
-    # providing defailt script logger
+    # providing default script logger
     logger = setup_logger(
         name=os.environ.get("bookmarks_logger_name"), log_level="DEBUG"
     )
